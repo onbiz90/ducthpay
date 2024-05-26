@@ -31,14 +31,19 @@ export const CenteredOverlayForm = ({ title, children, validated, handleSubmit }
 }
 
 const StyledCenteralizedContainer = styled(Container)`
+    width: 50vw;
+    @media (max-width: 500px){
+        width: 80vw;
+    }
+
+    min-height: 100vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0px;
     gap: 10px;
-    width: 50vw;
-    min-height: 100vh;
 `
 
 const StyledTitle = styled.h2`
